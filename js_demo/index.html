@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollingshead | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" scr="js/script.js"></script>
+</head>
+<body>
+    <h1>Today, we will learn about JavaScript</h1>
+    <h2>How do we do onclick events?</h2>
+    <p><a href="https://www.google.com" target="_blank" onclick="alert('Warning!\nYou are navigating away from my website.\nAre you suuuuuure you want to do that?');">Search Google</a></p>
+ 
+    <h2>How do we do math with JS?</h2>
+    <p>What is 5+6?</p>
+    <button onclick="document.getElementById('add').innerHTML = 5+6">Click here to find the answer!</button>
+    <p id="add"></p>
+ 
+    <h2>How do we change text already on the page with JS?</h2>
+    <button onclick="document.getElementById('change').innerHTML = 'Surprise! This text is now different!'">Click me to change the text below!</button>
+    <p id="change">This text will change</p>
+ 
+    <h2>We can also add the date and time</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">Click me for the date and time</button>
+    <p id="date"></p>
+
+    <h2>How do we make a function with JS?</h2>
+    <p>Let's use a function to add text.</p>
+    <button onclick="pFun()">Click me to run a function!</button>
+    <p> id="p-fun"</p>
+
+    <h2>How do we use return user data?</h2>
+    <button onclick="askName()">Click to enter your name</button>
+    <p id="ask-name"></p>
+    <h2>How do we ask other questions with JS</h2>
+    <button onclick="askQuestion()">Click here for a cool question</button>
+    <p id="question"></p>
+
+    <h2>How do we make images appear with a button click</h2>
+    <button onclick="showImage()">Click me for a surprise</button>
+    <img id="surprise" width="500px">
+
+    <script>
+        //alert("Hello, world!");
+
+        function pFun() {
+            var p=document.getElementById(p-fun);
+            p.innerHTML='you just ran a function, hooray!';
+            p.style.fontSize='30px';
+            p.style.color = 'pink';
+        }
+
+        function showImage() {
+            var image=document.getElementById('surprise');
+            image.src = 'images/ashton.jfif'
+        }
+    </script>
+</body>
+</html>
